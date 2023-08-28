@@ -39,7 +39,7 @@ class Main():
         dome=Dome(10)
         bowl=Bowl(5)
 
-        print("Pillar height:",pillar)
+        print("Pillar height:",pillar.height())
         print("Dome radius:",dome)
         print("Bowl volume:",bowl)
 
