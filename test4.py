@@ -1,7 +1,7 @@
 # tkinter is the standard method for gui coding
 from tkinter import *
 
-def ButtonPressed():
+def button_pressed():
     print("function called")
 
 # this function is only called when the program is run directly by the python interpreter, which is mostly just a part of the standard design of python gui code
@@ -18,7 +18,7 @@ if __name__=="__main__":
     # this places the text on a grid, which can prevent overlapping of different objects. grids are very effective at positioning objects, and for the padding, while the value given for padding will be used in both directions, you can use a tuple to give each side a different value
     text.grid(row=0,column=2,padx=175,pady=(125,50))
     # this is just a testing button
-    button=Button(gui,text="call function",bg='white',command=lambda:ButtonPressed(),height=4,width=14)
+    button=Button(gui,text="call function",bg='white',command=lambda:button_pressed(),height=4,width=14)
     # this sets the button on the same grid, but below the text
     button.grid(row=1,column=2)
     

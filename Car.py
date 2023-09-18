@@ -28,11 +28,11 @@ class Car:
         return(self.color,self.make,self.model,self.year,' braking')
     
     # define a function to return the car turning left
-    def turnLeft(self):
+    def turn_left(self):
         return(self.color,self.make,self.model,self.year,' turning left')
     
     # define a function to return the car turning right
-    def turnRight(self):
+    def turn_right(self):
         return(self.color,self.make,self.model,self.year,' turning right')
 
 # get input from user for the specifications of car
@@ -46,8 +46,8 @@ inst1=Car(carColor,carMake,carModel,carYear)
 inst2=Car('red','nissan','sentra','1991')
 print(inst1.accelerating())
 print(inst2.accelerating())
-print(inst2.turnLeft())
-print(inst2.turnRight())
+print(inst2.turn_left())
+print(inst2.turn_right())
 print(inst1.braking())
 print(inst2.braking())
 print('inst1 wins')
